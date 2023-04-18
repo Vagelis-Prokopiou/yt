@@ -1,0 +1,18 @@
+[package]
+name = "api_actix_web"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.56"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "api_actix_web"
+
+[dependencies]
+actix-web = "4"
+
+serde = { version = "1", features = ["derive"] }
+num_cpus = "1"
